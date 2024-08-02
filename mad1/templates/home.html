@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.P.S.S. Groceries</title>
+    <link rel="stylesheet" type="text/css" href={{ url_for('static', filename='style.css')}}>
+</head>
+<body>
+
+    <form method="POST">
+     <div class="container">   
+        <div class="intro">
+            <div class="welcome">
+              <h1>Welcome to </h1>
+              <h1>M. P. S. S. Groceries!!!</h1>
+            </div> 
+            <div class="brief">
+            <p>This is the online platform where you can buy your favourite and needed groceries in the place where you are.</p>
+            </div>
+        </div>
+        <div class="box">
+            <h3>To explore more as a user, please click on "Log in as a user"</h3>
+            <a href="/userlogin">Log in as a user</a>
+            <h3>Are you the store manager? Then please click on "Log in as Manager"</h3>
+            <a href="/managerlogin">Log in as Manager
+        </div>
+    </div>      
+    </form>
+</body>
+</html>

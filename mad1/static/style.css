@@ -1,0 +1,62 @@
+body{
+    margin:0;
+    padding:0;
+    background: url("background1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+  }
+.container{
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 125px;
+
+}
+.intro {
+   
+   top: 116px;
+   left: 45px;
+   height: 50vh;
+   width: 35%;
+   background: rgb(0, 0, 0);
+   padding: 80px;
+   color: #e4e4e4;
+   float:left;
+}  
+@font-face{
+  font-family: myFont1;
+  src: url(Rushbold.ttf);
+  font-weight: 300;
+}
+@font-face{
+  font-family: myFont2;
+  src: url(Speciality.otf)
+}
+.welcome {
+  font-size: larger;
+  font-family: myFont1;
+}
+.brief {
+  font-size: x-large;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 500;
+  font-weight: bolder;
+  font-style: italic;
+}
+.box {
+  
+  top: 116px;
+  left: 45px;
+  height: 50vh;
+  width: 35%;
+  background: rgb(0, 0, 0);
+  padding: 80px;
+  float: right;
+  color: #e4e4e4;
+  font-size: x-large;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 500;
+  font-weight: bolder;
+  font-style: italic;
+}

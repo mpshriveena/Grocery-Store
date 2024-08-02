@@ -1,0 +1,41 @@
+body {
+    background: url('background2.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#searchform {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.category {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    border: 2px solid rgb(162, 151, 211)
+}
+
+.product {
+    width: 420px;
+    background-color: rgb(229, 243, 228);
+    border: 2px solid greenyellow;
+    color: black;
+    border-radius: 10px;
+    padding: 30px 40px;
+    margin: 20px;
+ 
+}
+.categoryname {
+    color: white;
+}
+
+#quantity {
+    width: 20%;
+}
+   
+

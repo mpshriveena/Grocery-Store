@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Purchase</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href={{ url_for('static', filename='style2.css')}}>
+</head>
+<body>
+
+
+  <div class = "colour" style = "background-color: rgb(209, 250, 190);">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/user">Products</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/cart">Cart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/purchased">Purchase</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/">Log out</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  
+  
+
+
+
+<section class="vh-100">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col col-lg-9 col-xl-7">
+        <div class="card rounded-3">
+          <div class="card-body p-4">
+            <h5 class="text-center my-3 pb-3">Thank You for purchasing. Keep Shopping!!!</h5>
+            <h4 class="text-center my-3 pb-3">My Purchased items</h4>
+
+  
+            <table class="table mb-4">
+              <thead>
+                  <tr>
+                    
+                    <th scope="col">Category Name</th>
+                    <th scope="col">Product Name</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Quantity</th>
+                  
+                  </tr>
+              </thead>
+              <tbody>
+                  {% for product in buy_list %}
+                  <tr>
+                    
+                    <td>{{ product.categoryname }}</td>
+                    <td>{{ product.productname }}</td>
+                    <td>Rs: {{ product.price }}/{{product.unit }}</td>
+                    <td>{{ product.quantity }}</td>
+                    
+                    
+                    
+                  </tr>
+                  
+                  {% endfor %}
+              </tbody>
+              
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>  

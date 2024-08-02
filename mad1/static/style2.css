@@ -1,0 +1,11 @@
+body {
+    
+    background: url('background1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#change{
+    display: flex;
+    flex-direction: column;
+}
